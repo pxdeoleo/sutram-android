@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".RecargarSaldo">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="405dp"
+        android:layout_height="359dp"
+        app:srcCompat="@drawable/paypal_2014_logo"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="67dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvMonto"
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:text="Monto:"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="91dp"
+            tools:layout_editor_absoluteY="474dp" />
+
+        <EditText
+            android:id="@+id/etMonto"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="211dp"
+            tools:layout_editor_absoluteY="472dp" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="23dp" />
+
+    <TextView
+        android:id="@+id/tvLimites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Min: RD$ 20 | Máx: RD$ 1000"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="525dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="17dp" />
+
+    <Button
+        android:id="@+id/btnPagar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Procesar Pago"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="575dp" />
+</LinearLayout>
